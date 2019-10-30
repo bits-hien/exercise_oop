@@ -46,5 +46,4 @@
     echo "Chu vi của hình vuông đó là: ". $GT2->perimeterSquare(). "cm";
     echo "<br>";
     echo "Diện tích hình vuông đó là: ". $GT2->acreageSquare() . "cm2";
-
 ?>

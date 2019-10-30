@@ -1,49 +1,50 @@
 <?php
     class Triangle{
         public $height;
-        public $bottom_edge;
-        public $adjacent_side1;
-        public $adjacent_side2;
+        public $bottomEdge;
+        public $adjacentSide1;
+        public $adjacentSide2;
 
-        function __construct($bottom_edge, $adjacent_side1, $adjacent_side2, $height){
+        function __construct($bottomEdge, $adjacentSide1, $adjacentSide2, $height){
             $this->height = $height;
-            $this->bottom_edge = $bottom_edge;
-            $this->adjacent_side1 = $adjacent_side1;
-            $this->adjacent_side2 = $adjacent_side2;
+            $this->bottomEdge = $bottomEdge;
+            $this->adjacentSide1 = $adjacentSide1;
+            $this->adjacentSide2 = $adjacentSide2;
         }
 
-        function perimeter_triangle(){
-            return $this->bottom_edge + $this->adjacent_side1 + $this->adjacent_side2;
+        function perimeterTriangle(){
+            return $this->bottomEdge + $this->adjacentSide1 + $this->adjacentSide2;
         }
 
-        function acreage_triangle(){
-            return $this->bottom_edge * $this->height /2;
+        function acreageTriangle(){
+            return $this->bottomEdge * $this->height /2;
         }
     } 
     $GT1 = new Triangle(5, 6, 7, 6);
-    echo "Perimeter_triangle is: ". $GT1-> perimeter_triangle(). "cm";
+    echo "Perimeter_triangle is: ". $GT1-> perimeterTriangle(). "cm";
     echo "<br>";
-    echo "perimeter_triangle is ". $GT1-> acreage_triangle(). "cm2";
+    echo "perimeter_triangle is ". $GT1-> acreageTriangle(). "cm2";
     echo "<br>";
 
 
     class Square {
-        public $sqare_edge;
+        public $sqareEdge;
 
-        function __construct($square_edge){
-            $this->square_edge = $square_edge;
+        function __construct($squareEdge){
+            $this->squareEdge = $squareEdge;
         }
 
-        function perimeter_square(){
-            return $this->square_edge *4;
+        function perimeterSquare(){
+            return $this->squareEdge *4;
         }
 
-        function acreage_square(){
-            return $this->square_edge * $this->square_edge;
+        function acreageSquare(){
+            return $this->squareEdge * $this->squareEdge;
         }
     }
     $GT2 = new Square(24);
-    echo "Chu vi của hình vuông đó là: ". $GT2->perimeter_square(). "cm";
+    echo "Chu vi của hình vuông đó là: ". $GT2->perimeterSquare(). "cm";
     echo "<br>";
-    echo "Diện tích hình vuông đó là: ". $GT2->acreage_square() . "cm2";
+    echo "Diện tích hình vuông đó là: ". $GT2->acreageSquare() . "cm2";
+
 ?>

@@ -1,5 +1,5 @@
 <?php
-    class Caculator {
+    class Calculator {
         public $first;
         public $second;
 
@@ -28,7 +28,7 @@
             }
         }    
     }
-   $GT1 = new Caculator(5, 0);
+   $GT1 = new Calculator(5, 0);
    echo $GT1->add();
    echo "<br>";
    echo $GT1->subtraction();
